@@ -5,40 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script>
-      function loaded() {
-        let t = document.getElementById('titulo')
-        //  t.onclick = mudarText
-        t.addEventListener('mouseover', mudarText)
-        t.addEventListener('mouseout', mouseout)
-      }
-      function mudarText() {
-        this.innerHTML = 'Novo Texto'
-      }
-      function mouseout() {
-        this.innerHTML = 'teste'
-      }
-      function onOver(elemento) {
-        elemento.style.backgroundColor = 'red'
-      }
-      function onOut(elemento) {
-        elemento.style.backgroundColor = 'blue'
-      }
-    </script>
-    <style>
-      div {
-        display: inline-block;
-        padding: 20px;
-        font-size: 2rem;
-        background-color: aqua;
-        color: aliceblue;
-      }
-    </style>
   </head>
-  <body onload="loaded()">
-    <h1 id="titulo">teste</h1>
+  <body">
 
-    <div onmouseover="onOver(this)" onmouseout="onOut(this)">Click</div>
+  <h1 id="d"></h1>
+
+  <button onclick="sortear()">Sortear</button>
 
     <script src="script.js"></script>
   </body>
